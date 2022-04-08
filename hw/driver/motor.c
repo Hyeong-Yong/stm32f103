@@ -188,21 +188,21 @@ void setZeroAngle() // 현재 각도를 0으로 설정.
 }
 void setDirection() // 방향 전환하기 (디폴트는 시계방향)
 {
-  if (motor_status->direction==true)
+  if (motor_status.direction==true)
     {
-      motor_status->direction=false;
+      motor_status.direction=false;
     }
-  else if (motor_status->direction==false)
+  else if (motor_status.direction==false)
     {
-      motor_status->direction=true;
+      motor_status.direction=true;
     }
 }
 
 void getStatus() // display status (angle, speed, direction)
 {
-  cliPrintf("Current angle     : %d\n", motor_status->current_angle);
-  cliPrintf("Current RPM       : %d\n", motor_status->current_rpm);
-  if (motor_status->direction==true)
+  cliPrintf("Current angle     : %d\n", motor_status.current_angle);
+  cliPrintf("Current RPM       : %d\n", motor_status.current_rpm);
+  if (motor_status.direction==true)
 	{
 	  cliPrintf("Current direction : Clockwise\n");
 	}
@@ -223,14 +223,14 @@ void cliMotor(cli_args_t *args)
     {
       degree = (uint32_t)args->getData(1);
       setRotation(degree);
-      cliPrintf("Current angle is %d\n", motor_status->current_angle);
+      cliPrintf("Current angle is %d\n", motor_status.current_angle);
       ret= true;
     }
 
   if (args->argc == 1 && args->isStr(0, "direction") == true) //"motor", "direction"
     {
       setDirection();
-      if (motor_status->direction==true)
+      if (motor_status.direction==true)
 	{
 	  cliPrintf("Clockwise\n");
 	}
@@ -244,7 +244,7 @@ void cliMotor(cli_args_t *args)
   if (args->argc == 1 && args->isStr(0, "zero") == true) //"motor", "direction"
     {
       setZeroAngle();
-      cliPrintf("Current angle is %d\n", motor_status->current_angle);
+      cliPrintf("Current angle is %d\n", motor_status.current_angle);
       ret = true;
     }
 
