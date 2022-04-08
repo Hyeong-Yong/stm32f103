@@ -18,7 +18,7 @@ typedef struct
 
 led_tbl_t led_tbl[LED_MAX_CH] =
     {
-        {GPIOB, GPIO_PIN_12, GPIO_PIN_RESET, GPIO_PIN_SET}
+        {GPIOB, GPIO_PIN_12, GPIO_PIN_SET, GPIO_PIN_RESET}
     };
 
 #ifdef _USE_HW_CLI
@@ -98,12 +98,27 @@ void cliLED(cli_args_t *args)
               ledToggle(led_ch);
             }
         }
-      return ret=true;
     }
+
+
+  if (args->argc == 2 && args->isStr(0, "switch") == true) // led toggle ch on
+    {
+      uint8_t led_ch;
+
+      led_ch = (uint8_t)args->getData(1);
+
+      if (led_ch >0)
+        {
+          led_ch--;
+        }
+      ledToggle(led_ch);
+    }
+
 
   if (ret != true)
     {
       cliPrintf("led toggle ch[1~%d] time_ms\n", LED_MAX_CH);
+      cliPrintf("led switch ch[1~%d] \n", LED_MAX_CH);
     }
 }
 

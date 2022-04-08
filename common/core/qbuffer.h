@@ -20,7 +20,7 @@ extern "C" {
     uint32_t tail;
     uint32_t len;
     uint8_t *p_buf;
-  } qbuffer_t; //구조체에서 p_buf는 구조체에서 정의하지 않고 사용하는쪽에서 동적 할당해서 유동적으로 사용할수 있겠금 설정.
+  } qbuffer_t; //구조체에서 p_buf는 구조체에서 정의하지 않고 사용하는쪽에서 할당해서 유동적으로 사용할수 있겠금 설정.
 
   void     qbufferInit(void);
   bool     qbufferCreate(qbuffer_t *p_node, uint8_t *p_buf, uint32_t length);

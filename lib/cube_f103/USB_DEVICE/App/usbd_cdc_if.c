@@ -32,8 +32,8 @@ USBD_CDC_LineCodingTypeDef LineCoding =
         0x08
     };
 
-uint32_t  rx_in=0;
-uint32_t  rx_out=0;
+uint32_t  rx_head=0;
+uint32_t  rx_tail=0;
 uint32_t  rx_len = 512;
 uint8_t   rx_buf[512];
 bool      rx_full = false;
@@ -42,38 +42,39 @@ uint32_t cdcAvailable(void) //ring buffer
 {
   uint32_t ret;
 
-  ret = (rx_in - rx_out) % rx_len;
+  ret = (rx_head - rx_tail) % rx_len;
   return ret;
+}
+
+
+uint8_t cdcDataIn(uint8_t rx_data)
+{
+
+  uint32_t next_rx_head;
+
+  rx_buf[rx_head]= rx_data;
+
+  next_rx_head =(rx_head +1)% rx_len;
+
+  if (next_rx_head != rx_tail)
+    {
+      rx_head = next_rx_head;
+    }
+  return 0;
 }
 
 uint8_t cdcRead(void)
 {
   uint8_t ret;
 
-  ret = rx_buf[rx_out];
+  ret = rx_buf[rx_tail];
 
-  if (rx_out != rx_in)
+  if (rx_head != rx_tail)
     {
-      rx_out = (rx_out + 1) % rx_len;
+      rx_tail = (rx_tail + 1) % rx_len;
     }
 
   return ret;
-}
-
-uint8_t cdcDataIn(uint8_t rx_data)
-{
-
-  uint32_t next_rx_in;
-
-  rx_buf[rx_in]= rx_data;
-
-  next_rx_in =(rx_in +1)% rx_len;
-
-  if (next_rx_in != rx_out)
-    {
-      rx_in = next_rx_in;
-    }
-  return 0;
 }
 
 uint8_t cdcWrite(uint8_t *p_data, uint32_t length)
@@ -114,16 +115,16 @@ uint8_t USBD_CDC_SOF(struct _USBD_HandleTypeDef *pdev)
 
       uint32_t buf_len;
 
-      buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : 쓸수 있는 한칸을 비워놓기
+      buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���?
       if (buf_len >= USB_FS_MAX_PACKET_SIZE)
         {
-          //다음데이터도 보내줘
+          //?��?��?��?��?��?�� 보내�?
           USBD_CDC_ReceivePacket(pdev);
           rx_full = false;
         }
       else
         {
-          //버퍼가 꽉 차서 밀리고 있다 즉, 버퍼용량 부족하니 기다려라.
+          //버퍼�? �? 차서 �?리고 ?��?�� �?, 버퍼?��?�� �?족하?�� 기다?��?��.
           rx_full = true;
         }
 
@@ -390,16 +391,16 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
   uint32_t buf_len;
 
-  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : 쓸수 있는 한칸을 비워놓기
+  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���?
   if (buf_len >= USB_FS_MAX_PACKET_SIZE)
     {
-      //다음데이터도 보내줘
+      //?��?��?��?��?��?�� 보내�?
       USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
       USBD_CDC_ReceivePacket(&hUsbDeviceFS);
     }
   else
     {
-      //버퍼가 꽉 차서 밀리고 있다 즉, 버퍼용량 부족하니 기다려라.
+      //버퍼�? �? 차서 �?리고 ?��?�� �?, 버퍼?��?�� �?족하?�� 기다?��?��.
       rx_full = true;
     }
 

@@ -15,7 +15,7 @@ void hwInit(void)
 
   resetInit();
   ledInit();
-//  motorInit();
+  motorInit();
   usbInit();
   uartInit();
   flashInit();

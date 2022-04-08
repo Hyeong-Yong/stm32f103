@@ -73,7 +73,7 @@ bool uartOpen(uint8_t ch, uint32_t baud)
             ret = false;
           }
 
-          qbuffer[ch].head = qbuffer[ch].len - hdma_usart1_rx.Instance->CNDTR;
+          qbuffer[ch].head = qbuffer[ch].len - hdma_usart1_rx.Instance->CNDTR; //256-256= 0, 256-255= 1, ...
           qbuffer[ch].tail = qbuffer[ch].head; //Flash
         }
     break;

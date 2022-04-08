@@ -26,11 +26,13 @@ void apMain(void)
 
   while(1)
     {
-      if (millis()-pre_time >=500)
+      if (millis()-pre_time >=2000)
         {
           pre_time=millis();
-          ledToggle(_DEF_LED1);
+//          ledToggle(_DEF_LED1);
+//          uartPrintf(_DEF_UART2, "\n");
         }
+
 
       if (uartAvailable(_DEF_UART2) > 0)
       {
