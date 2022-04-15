@@ -169,7 +169,27 @@ uint32_t uartGetBaud(uint8_t ch)
   return ret;
 }
 
+bool uartFlush(uint8_t ch)
+{
+  uint32_t pre_time;
 
+  pre_time = millis();
+  while(uartAvailable(ch))
+  {
+    if (millis()-pre_time >= 10)
+    {
+      break;
+    }
+    uartRead(ch);
+  }
+
+  return true;
+}
+
+bool uartClose(uint8_t ch)
+{
+  return true;
+}
 
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 {

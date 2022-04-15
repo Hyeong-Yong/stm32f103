@@ -7,6 +7,9 @@
 
 #include "usb.h"
 #include "usb_device.h"
+
+#ifdef _USB_HW_USB
+
 bool usbInit(void)
 {
   bool ret = true;
@@ -30,3 +33,5 @@ bool usbInit(void)
 
   return ret;
 }
+
+#endif

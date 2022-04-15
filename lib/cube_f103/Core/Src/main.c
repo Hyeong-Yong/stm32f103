@@ -20,6 +20,7 @@
 #include "main.h"
 #include "dma.h"
 #include "rtc.h"
+#include "tim.h"
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
@@ -92,6 +93,7 @@ int main(void)
   MX_RTC_Init();
   MX_DMA_Init();
   MX_USART1_UART_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

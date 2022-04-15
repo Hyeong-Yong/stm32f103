@@ -17,7 +17,7 @@
 #include "cdc.h"
 #include "flash.h"
 #include "cli.h"
-
+#include "motor.h"
 
 void hwInit(void);
 

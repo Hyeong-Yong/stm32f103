@@ -14,8 +14,6 @@
 
 bool usbInit(void);
 
-
-
 #endif
 
 

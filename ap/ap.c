@@ -9,14 +9,16 @@
 #include "ap.h"
 
 
-
 void apInit(void)
 {
   uartOpen(_DEF_UART1, 57600); // USB_CDC
   uartOpen(_DEF_UART2, 57600);  // UART
 
   cliOpen(_DEF_UART1, 57600);
-  cliOpenLog(_DEF_UART2, 57600);
+//  cliOpenLog(_DEF_UART2, 57600);
+
+ motorOpen(_DEF_MOTOR1, 57600);
+  HAL_TIM_Base_Start(&htim1);
 }
 
 void apMain(void)
@@ -33,7 +35,7 @@ void apMain(void)
 //          uartPrintf(_DEF_UART2, "\n");
         }
 
-
+/*
       if (uartAvailable(_DEF_UART2) > 0)
       {
         uint8_t rx_data;
@@ -41,7 +43,10 @@ void apMain(void)
 
         uartPrintf(_DEF_UART2, "Rx : 0x%X\n", rx_data);
       }
+*/
 
+
+      motorGUIRun();
       cliMain();
 
     }

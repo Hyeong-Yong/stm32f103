@@ -19,9 +19,12 @@
 #define logPrintf(fmt, ...)
 #endif
 
+extern TIM_HandleTypeDef htim1;
 
+void tim1Init(void);
 void bspInit(void);
 void delay(uint32_t ms);
+void usDelay(uint32_t us);
 uint32_t millis(void);
 void Error_Handler(void);
 

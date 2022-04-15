@@ -8,6 +8,9 @@
 #include "rtc.h"
 //Backup Register 활성하시켜줘서 Reset button 누를 시 데이터를 BackupRegister에 저장
 
+#ifdef _USE_HW_RTC
+
+
 static RTC_HandleTypeDef hrtc;
 
 bool rtcInit(void)
@@ -75,4 +78,5 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* rtcHandle)
   }
 }
 
+#endif
 

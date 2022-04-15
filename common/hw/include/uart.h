@@ -20,6 +20,9 @@ uint8_t  uartRead(uint8_t ch);
 uint32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length);
 uint32_t uartPrintf(uint8_t ch, char*fmt, ...);
 uint32_t uartGetBaud(uint8_t ch);
+bool uartClose(uint8_t ch);
+bool uartFlush(uint8_t ch);
+
 #endif /*_USE_HW_UART*/
 
 #endif /* SRC_COMMON_HW_INCLUDE_UART_H_ */

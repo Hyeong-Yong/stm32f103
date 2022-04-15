@@ -9,6 +9,9 @@
 #include "reset.h"
 #include "rtc.h"
 
+
+#ifdef _USB_HW_RESET
+
 static uint32_t reset_count=0;
 
 bool resetInit(void)
@@ -18,7 +21,7 @@ bool resetInit(void)
   if (RCC->CSR & (1<<26))
     {
       rtcBackupRegWrite(1, rtcBackupRegRead(1)+1);
-      delay(500);
+      delay(200);
       reset_count = rtcBackupRegRead(1);
     }
 
@@ -31,3 +34,7 @@ uint32_t resetGetCount(void)
 {
   return reset_count;
 }
+
+
+
+#endif

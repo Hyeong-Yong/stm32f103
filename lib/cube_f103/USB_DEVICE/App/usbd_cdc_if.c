@@ -115,16 +115,16 @@ uint8_t USBD_CDC_SOF(struct _USBD_HandleTypeDef *pdev)
 
       uint32_t buf_len;
 
-      buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���?
+      buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���??
       if (buf_len >= USB_FS_MAX_PACKET_SIZE)
         {
-          //?��?��?��?��?��?�� 보내�?
+          //?��?��?��?��?��?�� 보내�??
           USBD_CDC_ReceivePacket(pdev);
           rx_full = false;
         }
       else
         {
-          //버퍼�? �? 차서 �?리고 ?��?�� �?, 버퍼?��?�� �?족하?�� 기다?��?��.
+          //버퍼�?? �?? 차서 �??리고 ?��?�� �??, 버퍼?��?�� �??족하?�� 기다?��?��.
           rx_full = true;
         }
 
@@ -391,16 +391,16 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
   uint32_t buf_len;
 
-  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���?
+  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���??
   if (buf_len >= USB_FS_MAX_PACKET_SIZE)
     {
-      //?��?��?��?��?��?�� 보내�?
+      //?��?��?��?��?��?�� 보내�??
       USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
       USBD_CDC_ReceivePacket(&hUsbDeviceFS);
     }
   else
     {
-      //버퍼�? �? 차서 �?리고 ?��?�� �?, 버퍼?��?�� �?족하?�� 기다?��?��.
+      //버퍼�?? �?? 차서 �??리고 ?��?�� �??, 버퍼?��?�� �??족하?�� 기다?��?��.
       rx_full = true;
     }
 

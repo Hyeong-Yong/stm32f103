@@ -8,7 +8,10 @@
 #ifndef SRC_HW_DRIVER_FLASH_C_
 #define SRC_HW_DRIVER_FLASH_C_
 
+
 #include "flash.h"
+
+#ifdef _USE_HW_FLASH
 
 #define FLASH_SECTOR_MAX    64  //stm32f1 => flash memory size 64kByte
 
@@ -151,5 +154,6 @@ bool flashRead(uint32_t addr, uint8_t *p_data, uint32_t length)
 return ret;
 }
 
+#endif
 
 #endif /* SRC_HW_DRIVER_FLASH_C_ */
