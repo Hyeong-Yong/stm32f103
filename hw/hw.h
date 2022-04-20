@@ -18,6 +18,10 @@
 #include "flash.h"
 #include "cli.h"
 #include "motor.h"
+#include "spi.h"
+#include "gpio.h"
+#include "dac.h"
+
 
 void hwInit(void);
 

@@ -9,6 +9,8 @@
 #include "cdc.h"
 #include "qbuffer.h"
 
+
+
 static bool is_open[UART_MAX_CH];
 
 static qbuffer_t qbuffer[UART_MAX_CH];
