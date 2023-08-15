@@ -11,18 +11,18 @@
 #include "def.h"
 #include "bsp.h"
 
-//#define _USB_HW_USB
+#define _USB_HW_USB
 //#define _USE_HW_RTC
 //#define _USB_HW_RESET
 #define _USE_HW_CDC
 #define _USE_HW_GPIO
-#define      HW_GPIO_MAX_CH      2
+#define      HW_GPIO_MAX_CH      4
 
 #define _USE_HW_SPI
-#define      HW_SPI_MAX_CH	 1
+#define      HW_SPI_MAX_CH	 2
 
-#define _USE_HW_DAC
-
+#define _USE_HW_MCP48x2
+#define DAC_TYPE_MCP4822
 //#define _USE_HW_FLASH
 
 //#define _USE_HW_MOTOR

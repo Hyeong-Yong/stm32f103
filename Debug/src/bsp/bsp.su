@@ -1,0 +1,10 @@
+../src/bsp/bsp.c:35:6:delay	0	static
+../src/bsp/bsp.c:43:6:usDelay	0	static
+../src/bsp/bsp.c:53:10:millis	0	static
+../src/bsp/bsp.c:58:5:__io_putchar	16	static
+../src/bsp/bsp.c:67:6:tim1Init	32	static,ignoring_inline_asm
+../src/bsp/bsp.c:108:6:HAL_TIM_Base_MspInit	8	static
+../src/bsp/bsp.c:124:6:HAL_TIM_Base_MspDeInit	0	static
+../src/bsp/bsp.c:141:6:SystemClock_Config	88	static,ignoring_inline_asm
+../src/bsp/bsp.c:14:6:bspInit	40	static
+../src/bsp/bsp.c:192:6:Error_Handler	0	static,ignoring_inline_asm

@@ -8,6 +8,7 @@
 #ifndef SRC_HW_HW_H_
 #define SRC_HW_HW_H_
 
+#include <mcp48x2.h>
 #include "hw_def.h"
 #include "led.h"
 #include "uart.h"
@@ -20,7 +21,6 @@
 #include "motor.h"
 #include "spi.h"
 #include "gpio.h"
-#include "dac.h"
 
 
 void hwInit(void);

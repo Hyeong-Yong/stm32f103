@@ -14,12 +14,14 @@ void apInit(void)
 //  uartOpen(_DEF_UART1, 57600); // USB_CDC
   uartOpen(_DEF_UART2, 57600);  // UART
 
-  cliOpen(_DEF_UART2, 57600);
+  cliOpen(_DEF_UART1, 57600);
 //  cliOpenLog(_DEF_UART2, 57600);
 
 // motorOpen(_DEF_MOTOR1, 57600);
   HAL_TIM_Base_Start(&htim1);
-  spiBegin(_DEF_SPI1);
+
+  //  spiBegin(_DEF_SPI1);
+  spiBegin(_DEF_SPI2);
 }
 
 
@@ -37,7 +39,7 @@ void apMain(void)
       if (millis()-pre_time >=500)
         {
           pre_time=millis();
-          setVoltageDAC_Polling(voltage);   //setVoltageDAC_DMA(voltage);
+          //setVoltageDAC_Polling(voltage);   //setVoltageDAC_DMA(voltage);
           voltage+=0.2;
           if (voltage > 4)
             {

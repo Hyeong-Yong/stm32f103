@@ -24,14 +24,15 @@ typedef struct _gpio_tbl_t
 
 gpio_tbl_t gpio_tbl[GPIO_MAX_CH] =
     {
-	{GPIOA, GPIO_PIN_6, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_SET, GPIO_PIN_RESET, _DEF_HIGH}, // 0.DAC CS (_DEF_DAC_CS)
-	{GPIOB, GPIO_PIN_6, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_SET, GPIO_PIN_RESET, _DEF_HIGH}, // 1.DAC LDAC (_DEF_DAC_LDAC)
+	{GPIOA, GPIO_PIN_6, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_SET, GPIO_PIN_RESET, _DEF_SET},  //
+	{GPIOB, GPIO_PIN_6, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_SET, GPIO_PIN_RESET, _DEF_SET},  //
+	{GPIOA, GPIO_PIN_8, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_RESET, GPIO_PIN_SET, _DEF_SET},  // 0.MSP4822 CS (_DEF_MSP4822_CS)
+	{GPIOB, GPIO_PIN_14, _DEF_OUTPUT_PULLUP, GPIO_SPEED_FREQ_HIGH, GPIO_PIN_RESET, GPIO_PIN_SET, _DEF_SET}, // 1.MSP4822 LDAC (_DEF_MSP4822_LDAC)
     };
 
 #ifdef _USE_HW_CLI
 static void cliGpio(cli_args_t* args);
 #endif
-
 
 
 bool gpioInit()
@@ -89,7 +90,6 @@ switch (mode)
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_PULLDOWN;
     break;
-
 }
 
 GPIO_InitStruct.Pin = gpio_tbl[ch].pin;
@@ -132,6 +132,7 @@ if (HAL_GPIO_ReadPin(gpio_tbl[ch].port, gpio_tbl[ch].pin)== gpio_tbl[ch].on_stat
 
 return ret;
 }
+
 void gpioPinToggle(uint8_t ch)
 {
   if (ch >= GPIO_MAX_CH)
@@ -142,13 +143,16 @@ void gpioPinToggle(uint8_t ch)
 
 }
 
-void gpioPinLatch(uint8_t ch)
+void gpioPinLatch(uint8_t ch, uint16_t delay)
 {
   if (ch >=GPIO_MAX_CH)
     {
       return;
     }
   HAL_GPIO_TogglePin(gpio_tbl[ch].port, gpio_tbl[ch].pin);
+  if(delay !=0){
+  HAL_Delay(delay);
+  }
   HAL_GPIO_TogglePin(gpio_tbl[ch].port, gpio_tbl[ch].pin);
 }
 

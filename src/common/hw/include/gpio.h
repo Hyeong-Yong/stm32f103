@@ -19,7 +19,7 @@ bool gpioPinMode(uint8_t ch, uint8_t mode);
 void gpioPinWrite(uint8_t ch, bool value);
 bool gpioPinRead(uint8_t ch);
 void gpioPinToggle(uint8_t ch);
-void gpioPinLatch(uint8_t ch);
+void gpioPinLatch(uint8_t ch, uint16_t delay);
 
 
 

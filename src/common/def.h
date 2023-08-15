@@ -35,13 +35,15 @@
 #define _DEF_OUTPUT_PULLUP	4
 #define _DEF_OUTPUT_PULLDOWN	5
 
-#define _DEF_SPI1 		0  //DAC_MSP4822
-#define _DEF_SPI2 		1
+#define _DEF_GPIO1	0
+#define _DEF_GPIO2	1
+#define _DEF_GPIO3	2  //GPIO DAC_CS (DAC_MSP4822)
+#define _DEF_GPIO4	3  //GPIO DAC_LDAC (DAC_MSP4822)
 
-#define _DEF_DAC_CS		0  //GPIO DAC_CS
-#define _DEF_DAC_LDAC		1  //GPIO DAC_LDAC
+#define _DEF_SPI1 		0
+#define _DEF_SPI2		1//DAC_MSP4822
 
-#define _DEF_LOW		0
-#define _DEF_HIGH		1
+#define _DEF_RESET		0
+#define _DEF_SET		1
 
 #endif /* SRC_COMMON_DEF_H_ */

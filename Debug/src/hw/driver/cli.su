@@ -1,0 +1,17 @@
+../src/hw/driver/cli.c:556:6:cliToUpper	8	static
+../src/hw/driver/cli.c:615:7:cliArgsGetStr	0	static
+../src/hw/driver/cli.c:631:6:cliArgsIsStr	8	static
+../src/hw/driver/cli.c:599:7:cliArgsGetFloat	0	static
+../src/hw/driver/cli.c:583:9:cliArgsGetData	0	static
+../src/hw/driver/cli.c:442:6:cliLineChange.constprop	16	static
+../src/hw/driver/cli.c:135:6:cliOpen	8	static
+../src/hw/driver/cli.c:145:6:cliOpenLog	8	static
+../src/hw/driver/cli.c:161:6:cliLogClose	0	static
+../src/hw/driver/cli.c:167:6:cliShowLog	24	static
+../src/hw/driver/cli.c:542:6:cliPrintf	24	static
+../src/hw/driver/cli.c:688:6:cliShowList	24	static
+../src/hw/driver/cli.c:705:6:cliMemoryDump	56	static
+../src/hw/driver/cli.c:194:6:cliMain	48	static
+../src/hw/driver/cli.c:650:6:cliKeepLoop	8	static
+../src/hw/driver/cli.c:665:6:cliAdd	16	static
+../src/hw/driver/cli.c:110:6:cliInit	8	static

@@ -12,14 +12,14 @@ void hwInit(void)
   bspInit();
   cliInit();
 //  resetInit();
-//  usbInit();
+  usbInit();
 //  rtcInit();
   tim1Init();
   gpioInit();
   ledInit();
 //  motorInit();
   spiInit();
-//  uartInit();
+  uartInit();
 //  flashInit();
-  DACInit();
+//  DACInit();
 }
