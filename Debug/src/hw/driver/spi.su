@@ -3,7 +3,7 @@
 ../src/hw/driver/spi.c:90:6:spiSetDataMode	0	static
 ../src/hw/driver/spi.c:128:6:spiSetBitWidth	0	static
 ../src/hw/driver/spi.c:142:9:spiTransfer8	32	static
-../src/hw/driver/spi.c:156:10:spiTransfer16	40	static
+../src/hw/driver/spi.c:156:10:spiTransfer16	32	static
 ../src/hw/driver/spi.c:182:6:spiDmaTxStart	4	static
 ../src/hw/driver/spi.c:213:6:spiDmaTxIsDone	0	static
 ../src/hw/driver/spi.c:193:6:spiDmaTxTransfer	16	static

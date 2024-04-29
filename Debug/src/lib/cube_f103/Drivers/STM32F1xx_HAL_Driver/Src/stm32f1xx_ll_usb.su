@@ -24,5 +24,5 @@
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2790:19:USB_ActivateRemoteWakeup	0	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2802:19:USB_DeActivateRemoteWakeup	0	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2817:6:USB_WritePMA	0	static
-../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2282:19:USB_EPStartXfer	32	static
+../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2282:19:USB_EPStartXfer	24	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:2852:6:USB_ReadPMA	20	static

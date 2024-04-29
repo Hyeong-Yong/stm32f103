@@ -1,2 +1,2 @@
-../src/ap/ap.c:12:6:apInit	1
-../src/ap/ap.c:29:6:apMain	3
+ap.c:12:6:apInit	1
+ap.c:27:6:apMain	3

@@ -17,8 +17,6 @@ void apInit(void)
   cliOpen(_DEF_UART1, 57600);
 //  cliOpenLog(_DEF_UART2, 57600);
 
-// motorOpen(_DEF_MOTOR1, 57600);
-  HAL_TIM_Base_Start(&htim1);
 
   //  spiBegin(_DEF_SPI1);
   spiBegin(_DEF_SPI2);
@@ -47,8 +45,6 @@ void apMain(void)
             }
         }
 
-
-//      motorGUIRun();
       cliMain();
 
     }

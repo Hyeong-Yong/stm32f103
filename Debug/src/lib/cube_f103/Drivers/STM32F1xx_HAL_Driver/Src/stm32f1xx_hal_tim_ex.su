@@ -9,7 +9,7 @@
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:369:19:HAL_TIMEx_HallSensor_Stop	8	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:397:19:HAL_TIMEx_HallSensor_Start_IT	16	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:454:19:HAL_TIMEx_HallSensor_Stop_IT	8	static
-../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:487:19:HAL_TIMEx_HallSensor_Start_DMA	16	static
+../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:487:19:HAL_TIMEx_HallSensor_Start_DMA	24	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:563:19:HAL_TIMEx_HallSensor_Stop_DMA	8	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:625:19:HAL_TIMEx_OCN_Start	8	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:676:19:HAL_TIMEx_OCN_Stop	16	static
