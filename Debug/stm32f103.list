@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_ranges 000021d8  00000000  00000000  0005ed98  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  0001efd4  00000000  00000000  00060f70  2**0
+ 17 .debug_macro  0001efc3  00000000  00000000  00060f70  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00029758  00000000  00000000  0007ff44  2**0
+ 18 .debug_line   00029716  00000000  00000000  0007ff33  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000952ac  00000000  00000000  000a969c  2**0
+ 19 .debug_str    000952ac  00000000  00000000  000a9649  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000050  00000000  00000000  0013e948  2**0
+ 20 .comment      00000050  00000000  00000000  0013e8f5  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00004f98  00000000  00000000  0013e998  2**2
+ 21 .debug_frame  00004f98  00000000  00000000  0013e948  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -14419,7 +14419,7 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
   uint32_t buf_len;
 
-  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���???
+  buf_len = ( rx_len - cdcAvailable() ) -1; //-1 : ?��?�� ?��?�� ?��칸을 비워?���???
  8005d0a:	4b0d      	ldr	r3, [pc, #52]	; (8005d40 <CDC_Receive_FS+0x44>)
  8005d0c:	681c      	ldr	r4, [r3, #0]
  8005d0e:	f7ff ffc9 	bl	8005ca4 <cdcAvailable>
@@ -14429,7 +14429,7 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
  8005d16:	2c3f      	cmp	r4, #63	; 0x3f
  8005d18:	d90d      	bls.n	8005d36 <CDC_Receive_FS+0x3a>
     {
-      //?��?��?��?��?��?�� 보내�???
+      //?��?��?��?��?��?�� 보내�???
       USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
  8005d1a:	4629      	mov	r1, r5
  8005d1c:	4809      	ldr	r0, [pc, #36]	; (8005d44 <CDC_Receive_FS+0x48>)

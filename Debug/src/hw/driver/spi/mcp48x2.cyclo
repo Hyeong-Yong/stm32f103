@@ -1,4 +1,0 @@
-mcp48x2.c:66:6:mcp48x2_SpiTransfer16.constprop	1
-mcp48x2.c:47:6:mcp48x2_Init	1
-mcp48x2.c:76:6:mcp48x2_setConfig	3
-mcp48x2.c:103:6:mcp48x2_setVoltage	6

@@ -1031,6 +1031,21 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./src/common/core/qbuffer.o
  .debug_macro   0x0000000000000000       0x29 ./src/common/core/qbuffer.o
  .debug_macro   0x0000000000000000       0x94 ./src/common/core/qbuffer.o
+ .group         0x0000000000000000        0xc ./src/hw/driver/adc.o
+ .text          0x0000000000000000        0x0 ./src/hw/driver/adc.o
+ .data          0x0000000000000000        0x0 ./src/hw/driver/adc.o
+ .bss           0x0000000000000000        0x0 ./src/hw/driver/adc.o
+ .debug_info    0x0000000000000000       0x21 ./src/hw/driver/adc.o
+ .debug_abbrev  0x0000000000000000       0x13 ./src/hw/driver/adc.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./src/hw/driver/adc.o
+ .debug_macro   0x0000000000000000       0x11 ./src/hw/driver/adc.o
+ .debug_macro   0x0000000000000000      0xa72 ./src/hw/driver/adc.o
+ .debug_line    0x0000000000000000       0x37 ./src/hw/driver/adc.o
+ .debug_str     0x0000000000000000     0x2cb5 ./src/hw/driver/adc.o
+ .comment       0x0000000000000000       0x51 ./src/hw/driver/adc.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./src/hw/driver/adc.o
  .group         0x0000000000000000        0xc ./src/hw/driver/cdc.o
  .group         0x0000000000000000        0xc ./src/hw/driver/cdc.o
  .group         0x0000000000000000        0xc ./src/hw/driver/cdc.o
@@ -3333,10 +3348,16 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./src/hw/driver/spi/mcp48x2.o
  .data          0x0000000000000000        0x0 ./src/hw/driver/spi/mcp48x2.o
  .bss           0x0000000000000000        0x0 ./src/hw/driver/spi/mcp48x2.o
+ .rodata.cliMcp48x2.str1.1
+                0x0000000000000000       0x41 ./src/hw/driver/spi/mcp48x2.o
+ .text.cliMcp48x2
+                0x0000000000000000       0x9c ./src/hw/driver/spi/mcp48x2.o
  .text.mcp48x2_SpiTransfer16.constprop.0
                 0x0000000000000000       0x2a ./src/hw/driver/spi/mcp48x2.o
+ .rodata.mcp48x2_Init.str1.1
+                0x0000000000000000        0x8 ./src/hw/driver/spi/mcp48x2.o
  .text.mcp48x2_Init
-                0x0000000000000000       0x2c ./src/hw/driver/spi/mcp48x2.o
+                0x0000000000000000       0x3c ./src/hw/driver/spi/mcp48x2.o
  .text.mcp48x2_setConfig
                 0x0000000000000000       0x20 ./src/hw/driver/spi/mcp48x2.o
  .text.mcp48x2_setVoltage
@@ -3345,12 +3366,12 @@ Discarded input sections
                 0x0000000000000000       0x10 ./src/hw/driver/spi/mcp48x2.o
  .rodata.spi_ch
                 0x0000000000000000        0x1 ./src/hw/driver/spi/mcp48x2.o
- .debug_info    0x0000000000000000      0x5f5 ./src/hw/driver/spi/mcp48x2.o
- .debug_abbrev  0x0000000000000000      0x249 ./src/hw/driver/spi/mcp48x2.o
- .debug_loc     0x0000000000000000      0x3cf ./src/hw/driver/spi/mcp48x2.o
+ .debug_info    0x0000000000000000      0x914 ./src/hw/driver/spi/mcp48x2.o
+ .debug_abbrev  0x0000000000000000      0x2f3 ./src/hw/driver/spi/mcp48x2.o
+ .debug_loc     0x0000000000000000      0x4bf ./src/hw/driver/spi/mcp48x2.o
  .debug_aranges
-                0x0000000000000000       0x38 ./src/hw/driver/spi/mcp48x2.o
- .debug_ranges  0x0000000000000000       0x70 ./src/hw/driver/spi/mcp48x2.o
+                0x0000000000000000       0x40 ./src/hw/driver/spi/mcp48x2.o
+ .debug_ranges  0x0000000000000000       0x78 ./src/hw/driver/spi/mcp48x2.o
  .debug_macro   0x0000000000000000      0x425 ./src/hw/driver/spi/mcp48x2.o
  .debug_macro   0x0000000000000000      0xa72 ./src/hw/driver/spi/mcp48x2.o
  .debug_macro   0x0000000000000000       0x22 ./src/hw/driver/spi/mcp48x2.o
@@ -3434,10 +3455,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./src/hw/driver/spi/mcp48x2.o
  .debug_macro   0x0000000000000000       0x28 ./src/hw/driver/spi/mcp48x2.o
  .debug_macro   0x0000000000000000       0x22 ./src/hw/driver/spi/mcp48x2.o
- .debug_line    0x0000000000000000      0xce4 ./src/hw/driver/spi/mcp48x2.o
- .debug_str     0x0000000000000000    0x8d358 ./src/hw/driver/spi/mcp48x2.o
+ .debug_line    0x0000000000000000      0xdc6 ./src/hw/driver/spi/mcp48x2.o
+ .debug_str     0x0000000000000000    0x8d3f7 ./src/hw/driver/spi/mcp48x2.o
  .comment       0x0000000000000000       0x51 ./src/hw/driver/spi/mcp48x2.o
- .debug_frame   0x0000000000000000       0x80 ./src/hw/driver/spi/mcp48x2.o
+ .debug_frame   0x0000000000000000       0xac ./src/hw/driver/spi/mcp48x2.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./src/hw/driver/spi/mcp48x2.o
  .group         0x0000000000000000        0xc ./src/hw/hw.o
@@ -3735,6 +3756,196 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xab ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x0000000000000000      0x242 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x0000000000000000       0x83 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .text          0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .data          0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .bss           0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_info    0x0000000000000000       0x6f ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_abbrev  0x0000000000000000       0x29 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1e1 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0xa72 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x233 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x2e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x8e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x51 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x103 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x6a ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1df ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x1c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0xbd ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0xd23 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000     0xe09e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x6d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000     0x348d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x174 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x5c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x5bc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x289 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1cb ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x114 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1b2 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x27 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x136 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1bc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x34 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x3c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x57 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x87 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x240 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x140 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x1ef ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0xeb ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x217 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x8ed ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x28e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0xab ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000      0x242 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000000       0x83 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_line    0x0000000000000000      0x7ed ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_str     0x0000000000000000    0x88c9a ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .comment       0x0000000000000000       0x51 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .text          0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .data          0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .bss           0x0000000000000000        0x0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_info    0x0000000000000000       0x6f ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_abbrev  0x0000000000000000       0x29 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1e0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0xa72 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x233 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x2e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x8e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x51 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x103 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x6a ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1df ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x1c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0xbd ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0xd23 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000     0xe09e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x6d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000     0x348d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x174 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x5c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x5bc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x289 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1cb ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x114 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1b2 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x27 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x136 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1bc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x34 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x3c ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x57 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x87 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x240 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x140 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x1ef ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0xeb ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x217 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x8ed ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x28e ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0xab ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000      0x242 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_macro   0x0000000000000000       0x83 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_line    0x0000000000000000      0x7f0 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_str     0x0000000000000000    0x88c9d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .comment       0x0000000000000000       0x51 ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
@@ -6960,9 +7171,6 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .text          0x0000000000000000        0x0 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .data          0x0000000000000000        0x0 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .bss           0x0000000000000000        0x0 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
@@ -7041,9 +7249,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x5f ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .debug_macro   0x0000000000000000      0x1c8 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .debug_macro   0x0000000000000000       0x8f ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x0000000000000000       0x4c ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x0000000000000000       0x94 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
@@ -7212,7 +7417,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
  .debug_macro   0x0000000000000000       0x4c ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
  .debug_macro   0x0000000000000000       0x94 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
- .debug_macro   0x0000000000000000       0x10 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
  .group         0x0000000000000000        0xc ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
@@ -8072,6 +8276,7 @@ LOAD ./src/bsp/sysmem.o
 LOAD ./src/bsp/system_stm32f1xx.o
 LOAD ./src/bsp/startup/startup_stm32f103c8tx.o
 LOAD ./src/common/core/qbuffer.o
+LOAD ./src/hw/driver/adc.o
 LOAD ./src/hw/driver/cdc.o
 LOAD ./src/hw/driver/cli.o
 LOAD ./src/hw/driver/flash.o
@@ -8088,6 +8293,8 @@ LOAD ./src/hw/driver/motor/motor_uart.o
 LOAD ./src/hw/driver/spi/mcp48x2.o
 LOAD ./src/hw/hw.o
 LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
 LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
 LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
 LOAD ./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o
@@ -10030,7 +10237,7 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_ranges  0x0000000000002098      0x130 ./src/lib/cube_f103/USB_DEVICE/Target/usbd_conf.o
  .debug_ranges  0x00000000000021c8       0x10 ./src/main.o
 
-.debug_macro    0x0000000000000000    0x1efd4
+.debug_macro    0x0000000000000000    0x1efc3
  .debug_macro   0x0000000000000000      0x46d ./src/ap/ap.o
  .debug_macro   0x000000000000046d      0xa72 ./src/ap/ap.o
  .debug_macro   0x0000000000000edf       0x22 ./src/ap/ap.o
@@ -10171,17 +10378,18 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x000000000001d0a6      0x1ce ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_macro   0x000000000001d274      0x3e7 ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_macro   0x000000000001d65b      0x3e3 ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_macro   0x000000000001da3e      0x443 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x000000000001de81       0x52 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x000000000001ded3       0x22 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x000000000001def5       0x10 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_macro   0x000000000001df05      0x422 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
- .debug_macro   0x000000000001e327      0x41a ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
- .debug_macro   0x000000000001e741       0x1c ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
- .debug_macro   0x000000000001e75d      0x400 ./src/lib/cube_f103/USB_DEVICE/Target/usbd_conf.o
- .debug_macro   0x000000000001eb5d      0x477 ./src/main.o
+ .debug_macro   0x000000000001da3e      0x41c ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
+ .debug_macro   0x000000000001de5a       0x52 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
+ .debug_macro   0x000000000001deac       0x22 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
+ .debug_macro   0x000000000001dece       0x16 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
+ .debug_macro   0x000000000001dee4      0x422 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
+ .debug_macro   0x000000000001e306       0x10 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
+ .debug_macro   0x000000000001e316      0x41a ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
+ .debug_macro   0x000000000001e730       0x1c ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
+ .debug_macro   0x000000000001e74c      0x400 ./src/lib/cube_f103/USB_DEVICE/Target/usbd_conf.o
+ .debug_macro   0x000000000001eb4c      0x477 ./src/main.o
 
-.debug_line     0x0000000000000000    0x29758
+.debug_line     0x0000000000000000    0x29716
  .debug_line    0x0000000000000000      0xbff ./src/ap/ap.o
  .debug_line    0x0000000000000bff      0xe2e ./src/bsp/bsp.o
  .debug_line    0x0000000000001a2d      0xbff ./src/bsp/stm32f1xx_hal_msp.o
@@ -10215,11 +10423,11 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x00000000000225d2     0x100a ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_line    0x00000000000235dc     0x112d ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_line    0x0000000000024709      0xc32 ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_line    0x000000000002533b      0xc44 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
- .debug_line    0x0000000000025f7f      0xf28 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
- .debug_line    0x0000000000026ea7      0xce6 ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
- .debug_line    0x0000000000027b8d     0x1016 ./src/lib/cube_f103/USB_DEVICE/Target/usbd_conf.o
- .debug_line    0x0000000000028ba3      0xbb5 ./src/main.o
+ .debug_line    0x000000000002533b      0xc02 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
+ .debug_line    0x0000000000025f3d      0xf28 ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
+ .debug_line    0x0000000000026e65      0xce6 ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
+ .debug_line    0x0000000000027b4b     0x1016 ./src/lib/cube_f103/USB_DEVICE/Target/usbd_conf.o
+ .debug_line    0x0000000000028b61      0xbb5 ./src/main.o
 
 .debug_str      0x0000000000000000    0x952ac
  .debug_str     0x0000000000000000    0x8cf16 ./src/ap/ap.o
@@ -10289,7 +10497,7 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_str     0x0000000000094d16       0x63 ./src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
                                       0x8d9df (size before relaxing)
  .debug_str     0x0000000000094d79      0x115 ./src/lib/cube_f103/USB_DEVICE/App/usb_device.o
-                                      0x8e012 (size before relaxing)
+                                      0x8dd68 (size before relaxing)
  .debug_str     0x0000000000094e8e      0x11c ./src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.o
                                       0x8e126 (size before relaxing)
  .debug_str     0x0000000000094faa      0x26a ./src/lib/cube_f103/USB_DEVICE/App/usbd_desc.o
