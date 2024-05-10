@@ -20,6 +20,8 @@ src/lib/cube_f103/USB_DEVICE/App/usb_device.o: \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
+ C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
@@ -42,8 +44,7 @@ src/lib/cube_f103/USB_DEVICE/App/usb_device.o: \
  ../src/lib/cube_f103/USB_DEVICE/App/usbd_desc.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- ../src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.h \
- C:/Dev/STM32/stm32f1xx/stm32f103/src/common/def.h
+ ../src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.h
 ../src/lib/cube_f103/USB_DEVICE/App/usb_device.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
@@ -64,6 +65,8 @@ C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
+C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h:
+C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
@@ -87,4 +90,3 @@ C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Middlewares/ST/STM32_USB_Devi
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 C:/Dev/STM32/stm32f1xx/stm32f103/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 ../src/lib/cube_f103/USB_DEVICE/App/usbd_cdc_if.h:
-C:/Dev/STM32/stm32f1xx/stm32f103/src/common/def.h:

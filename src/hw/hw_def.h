@@ -18,6 +18,9 @@
 #define _USE_HW_GPIO
 #define      HW_GPIO_MAX_CH      4
 
+
+#define _USE_HW_ADC
+#define         ADC_MAX_CH	 1
 #define _USE_HW_SPI
 #define      HW_SPI_MAX_CH	 2
 

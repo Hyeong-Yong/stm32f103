@@ -1,0 +1,6 @@
+../src/hw/driver/adc.c:33:6:adcInit	7
+../src/hw/driver/adc.c:105:6:ADCstart_DMA	1
+../src/hw/driver/adc.c:111:6:ADCstop_DMA	1
+../src/hw/driver/adc.c:116:6:HAL_ADC_ConvCpltCallback	1
+../src/hw/driver/adc.c:122:6:HAL_ADC_MspInit	3
+../src/hw/driver/adc.c:172:6:HAL_ADC_MspDeInit	2
