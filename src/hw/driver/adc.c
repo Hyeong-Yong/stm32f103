@@ -1,6 +1,7 @@
 /*
  * adc.c
  *
+<<<<<<< HEAD
  *  Created on: Apr 30, 2024
  *      Author: hwang
  */
@@ -203,3 +204,10 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 
 
 #endif
+=======
+ *  Created on: 2024. 4. 29.
+ *      Author: User
+ */
+
+
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5

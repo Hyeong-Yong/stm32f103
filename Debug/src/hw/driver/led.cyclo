@@ -1,6 +1,6 @@
-../src/hw/driver/led.c:63:6:ledOff.part.0	1
-../src/hw/driver/led.c:29:6:ledInit	1
-../src/hw/driver/led.c:58:6:ledOn	2
-../src/hw/driver/led.c:63:6:ledOff	2
-../src/hw/driver/led.c:68:6:ledToggle	2
-../src/hw/driver/led.c:75:6:cliLED	9
+led.c:63:6:ledOff.part.0	1
+led.c:29:6:ledInit	1
+led.c:58:6:ledOn	2
+led.c:63:6:ledOff	2
+led.c:68:6:ledToggle	2
+led.c:75:6:cliLED	9

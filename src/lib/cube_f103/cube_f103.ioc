@@ -1,4 +1,5 @@
 #MicroXplorer Configuration settings - do not modify
+<<<<<<< HEAD
 ADC1.Channel-1\#ChannelRegularConversion=ADC_CHANNEL_5
 ADC1.Channel-2\#ChannelRegularConversion=ADC_CHANNEL_7
 ADC1.Channel-3\#ChannelRegularConversion=ADC_CHANNEL_8
@@ -18,6 +19,26 @@ ADC1.SamplingTime-2\#ChannelRegularConversion=ADC_SAMPLETIME_55CYCLES_5
 ADC1.SamplingTime-3\#ChannelRegularConversion=ADC_SAMPLETIME_55CYCLES_5
 ADC1.SamplingTime-4\#ChannelRegularConversion=ADC_SAMPLETIME_55CYCLES_5
 ADC1.SamplingTime-5\#ChannelRegularConversion=ADC_SAMPLETIME_239CYCLES_5
+=======
+ADC1.Channel-4\#ChannelRegularConversion=ADC_CHANNEL_5
+ADC1.Channel-5\#ChannelRegularConversion=ADC_CHANNEL_7
+ADC1.Channel-6\#ChannelRegularConversion=ADC_CHANNEL_8
+ADC1.Channel-7\#ChannelRegularConversion=ADC_CHANNEL_9
+ADC1.ContinuousConvMode=ENABLE
+ADC1.DataAlign=ADC_DATAALIGN_RIGHT
+ADC1.EnableRegularConversion=ENABLE
+ADC1.IPParameters=ContinuousConvMode,master,EnableRegularConversion,DataAlign,Rank-4\#ChannelRegularConversion,Channel-4\#ChannelRegularConversion,SamplingTime-4\#ChannelRegularConversion,NbrOfConversionFlag,Rank-5\#ChannelRegularConversion,Channel-5\#ChannelRegularConversion,SamplingTime-5\#ChannelRegularConversion,Rank-6\#ChannelRegularConversion,Channel-6\#ChannelRegularConversion,SamplingTime-6\#ChannelRegularConversion,NbrOfConversion,Rank-7\#ChannelRegularConversion,Channel-7\#ChannelRegularConversion,SamplingTime-7\#ChannelRegularConversion
+ADC1.NbrOfConversion=4
+ADC1.NbrOfConversionFlag=1
+ADC1.Rank-4\#ChannelRegularConversion=1
+ADC1.Rank-5\#ChannelRegularConversion=2
+ADC1.Rank-6\#ChannelRegularConversion=3
+ADC1.Rank-7\#ChannelRegularConversion=4
+ADC1.SamplingTime-4\#ChannelRegularConversion=ADC_SAMPLETIME_28CYCLES_5
+ADC1.SamplingTime-5\#ChannelRegularConversion=ADC_SAMPLETIME_41CYCLES_5
+ADC1.SamplingTime-6\#ChannelRegularConversion=ADC_SAMPLETIME_55CYCLES_5
+ADC1.SamplingTime-7\#ChannelRegularConversion=ADC_SAMPLETIME_71CYCLES_5
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
 ADC1.master=1
 CAD.formats=
 CAD.pinconfig=
@@ -94,24 +115,41 @@ Mcu.Pin24=PA14
 Mcu.Pin25=PB3
 Mcu.Pin26=PB5
 Mcu.Pin27=PB6
+<<<<<<< HEAD
 Mcu.Pin28=VP_ADC1_TempSens_Input
 Mcu.Pin29=VP_RTC_VS_RTC_Activate
 Mcu.Pin3=PD0-OSC_IN
 Mcu.Pin30=VP_SYS_VS_Systick
 Mcu.Pin31=VP_TIM1_VS_ClockSourceINT
 Mcu.Pin32=VP_USB_DEVICE_VS_USB_DEVICE_CDC_FS
+=======
+Mcu.Pin28=VP_RTC_VS_RTC_Activate
+Mcu.Pin29=VP_SYS_VS_Systick
+Mcu.Pin3=PD0-OSC_IN
+Mcu.Pin30=VP_TIM1_VS_ClockSourceINT
+Mcu.Pin31=VP_USB_DEVICE_VS_USB_DEVICE_CDC_FS
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
 Mcu.Pin4=PD1-OSC_OUT
 Mcu.Pin5=PA1
 Mcu.Pin6=PA2
 Mcu.Pin7=PA3
 Mcu.Pin8=PA4
 Mcu.Pin9=PA5
+<<<<<<< HEAD
 Mcu.PinsNb=33
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F103C8Tx
 MxCube.Version=6.9.2
 MxDb.Version=DB.6.0.92
+=======
+Mcu.PinsNb=32
+Mcu.ThirdPartyNb=0
+Mcu.UserConstants=
+Mcu.UserName=STM32F103C8Tx
+MxCube.Version=6.10.0
+MxDb.Version=DB.6.0.100
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
 NVIC.BusFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.DMA1_Channel1_IRQn=true\:0\:0\:false\:false\:true\:false\:true\:true
 NVIC.DMA1_Channel3_IRQn=true\:0\:0\:false\:false\:true\:false\:true\:true

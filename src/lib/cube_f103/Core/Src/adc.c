@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "adc.h"
 
+<<<<<<< HEAD
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
@@ -29,6 +30,28 @@ void MX_ADC1_Init(void)
 
   ADC_ChannelConfTypeDef sConfig = {0};
 
+=======
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
+
+/* ADC1 init function */
+void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
 
   /** Common config
   */
@@ -38,7 +61,11 @@ void MX_ADC1_Init(void)
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+<<<<<<< HEAD
   hadc1.Init.NbrOfConversion = 5;
+=======
+  hadc1.Init.NbrOfConversion = 4;
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
@@ -48,7 +75,11 @@ void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_5;
   sConfig.Rank = ADC_REGULAR_RANK_1;
+<<<<<<< HEAD
   sConfig.SamplingTime = ADC_SAMPLETIME_55CYCLES_5;
+=======
+  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES_5;
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -58,6 +89,10 @@ void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_7;
   sConfig.Rank = ADC_REGULAR_RANK_2;
+<<<<<<< HEAD
+=======
+  sConfig.SamplingTime = ADC_SAMPLETIME_41CYCLES_5;
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -67,6 +102,10 @@ void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_8;
   sConfig.Rank = ADC_REGULAR_RANK_3;
+<<<<<<< HEAD
+=======
+  sConfig.SamplingTime = ADC_SAMPLETIME_55CYCLES_5;
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -76,6 +115,7 @@ void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_9;
   sConfig.Rank = ADC_REGULAR_RANK_4;
+<<<<<<< HEAD
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -86,6 +126,9 @@ void MX_ADC1_Init(void)
   sConfig.Channel = ADC_CHANNEL_TEMPSENSOR;
   sConfig.Rank = ADC_REGULAR_RANK_5;
   sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
+=======
+  sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -141,10 +184,16 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
 
     __HAL_LINKDMA(adcHandle,DMA_Handle,hdma_adc1);
 
+<<<<<<< HEAD
     /* DMA1_Channel1_IRQn interrupt configuration */
     HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
 
+=======
+  /* USER CODE BEGIN ADC1_MspInit 1 */
+
+  /* USER CODE END ADC1_MspInit 1 */
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   }
 }
 
@@ -153,6 +202,12 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 
   if(adcHandle->Instance==ADC1)
   {
+<<<<<<< HEAD
+=======
+  /* USER CODE BEGIN ADC1_MspDeInit 0 */
+
+  /* USER CODE END ADC1_MspDeInit 0 */
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
     /* Peripheral clock disable */
     __HAL_RCC_ADC1_CLK_DISABLE();
 
@@ -162,14 +217,20 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     PB0     ------> ADC1_IN8
     PB1     ------> ADC1_IN9
     */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_7);
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_0|GPIO_PIN_1);
 
     /* ADC1 DMA DeInit */
     HAL_DMA_DeInit(adcHandle->DMA_Handle);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53b375ada1cfcbb6ba7c7f64104a331a010ce9e5
   /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
   /* USER CODE END ADC1_MspDeInit 1 */

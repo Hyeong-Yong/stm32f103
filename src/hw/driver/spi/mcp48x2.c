@@ -35,7 +35,9 @@
 const uint8_t spi_ch = _DEF_SPI1;
 
 
-
+#ifdef _USE_HW_CLI
+static void cliMcp48x2(cli_args_t *args);
+#endif
 
 mcp48x2_config_t mcp48x2_config;
 
@@ -52,6 +54,12 @@ bool mcp48x2_Init()
 
   mcp48x2_CsWrite(_DEF_RESET);
   mcp48x2_setConfig(&mcp48x2_config, DAC_ENABLE, DAC_SELECT_A, DAC_GAIN_DOUBLE);
+
+
+#ifdef _USE_HW_CLI
+  cliMcp48x2("mcp4822", climcp48x2);
+#endif
+
   return ret;
 }
 
@@ -69,6 +77,7 @@ void mcp48x2_SpiTransfer16(mcp48x2_config_t* config, uint16_t tx_data){
 	  mcp48x2_CsWrite(_DEF_SET);
 	  mcp48x2_LatchWrite();
 };
+
 /*
  ****************************** Configuration********************************************************
  */
@@ -96,6 +105,8 @@ void mcp48x2_setConfig(mcp48x2_config_t* config, mcp48x2_enable_t enable, mcp48x
   mcp48x2_SpiTransfer16(config, tx_data);
 }
 
+
+//TODO: setEnable, selChannel, selGain
 
 /*****************************************************************************************************/
 
@@ -147,5 +158,57 @@ bool mcp48x2_setVoltage(mcp48x2_sel_AorB_t DAC_select_ch, float voltage)
 
     return true;
 }
+
+#ifdef _USE_HW_CLI
+void cliMcp48x2(cli_args_t *args){
+
+	  bool ret = false;
+
+	  if (args->argc == 3 && args->isStr(0, "enable") == true)
+	    {
+	      uint8_t ch;
+	      uint32_t toggle_time;
+	      uint32_t pre_time;
+
+	      led_ch = (uint8_t)args->getData(1);
+	      toggle_time = (uint32_t)args->getData(2);
+
+	      if (led_ch >0)
+	        {
+	          led_ch--;
+	        }
+	      pre_time=millis();
+	      while (cliKeepLoop())
+	        {
+	          if (millis()-pre_time >= toggle_time)
+	            {
+	              pre_time = millis();
+	              ledToggle(led_ch);
+	            }
+	        }
+	    }
+
+
+	  if (args->argc == 2 && args->isStr(0, "switch") == true) // led toggle ch on
+	    {
+	      uint8_t led_ch;
+
+	      led_ch = (uint8_t)args->getData(1);
+
+	      if (led_ch >0)
+	        {
+	          led_ch--;
+	        }
+	      ledToggle(led_ch);
+	    }
+
+
+	  if (ret != true)
+	    {
+	      cliPrintf("led toggle ch[1~%d] time_ms\n", LED_MAX_CH);
+	      cliPrintf("led switch ch[1~%d] \n", LED_MAX_CH);
+	    }
+}
+#endif
 
 #endif

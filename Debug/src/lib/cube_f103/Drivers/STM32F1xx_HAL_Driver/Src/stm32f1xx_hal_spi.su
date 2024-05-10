@@ -11,7 +11,7 @@
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1182:19:HAL_SPI_TransmitReceive	40	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:963:19:HAL_SPI_Receive	40	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1425:19:HAL_SPI_Transmit_IT	0	static
-../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1605:19:HAL_SPI_TransmitReceive_IT	16	static
+../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1605:19:HAL_SPI_TransmitReceive_IT	12	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1510:19:HAL_SPI_Receive_IT	16	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1693:19:HAL_SPI_Transmit_DMA	16	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:1914:19:HAL_SPI_TransmitReceive_DMA	16	static
@@ -45,7 +45,7 @@
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2730:13:SPI_DMATransmitCplt	24	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2787:13:SPI_DMAReceiveCplt	16	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2886:13:SPI_DMATransmitReceiveCplt	16	static
-../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2442:6:HAL_SPI_IRQHandler	32	static
+../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2442:6:HAL_SPI_IRQHandler	40	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:3053:13:SPI_DMAAbortOnError	8	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2658:13:HAL_SPI_AbortCpltCallback	0	static
 ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:2202:19:HAL_SPI_Abort_IT	32	static

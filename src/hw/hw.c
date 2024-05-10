@@ -21,5 +21,4 @@ void hwInit(void)
   spiInit();
   uartInit();
 //  flashInit();
-//  DACInit();
 }
