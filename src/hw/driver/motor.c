@@ -35,6 +35,8 @@ enum index
   INDEX_PARAM_4,
   INDEX_CHECK,
 };
+
+
 enum instruction
   {
     INST_SET_ANGLE =0x01,
@@ -45,6 +47,7 @@ enum instruction
     INST_GET_RPM =0x06,
     INST_GET_DIRECTION = 0x07,
   };
+
 motor_packet_t packet;
 motor_t motor;
 motor_status_t motor_status;
@@ -201,6 +204,8 @@ bool motorProcessPKT(motor_t *p_motor, uint8_t rx_data)
   }
   return ret;
 }
+
+
 bool checksumPacket(motor_t* p_motor)
 {
   bool ret = false;

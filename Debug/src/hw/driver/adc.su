@@ -1,0 +1,8 @@
+../src/hw/driver/adc.c:44:6:adcInit	32	static
+../src/hw/driver/adc.c:129:6:ADCstart_DMA	0	static
+../src/hw/driver/adc.c:135:6:ADCstop_DMA	0	static
+../src/hw/driver/adc.c:140:6:HAL_ADC_ConvCpltCallback	0	static
+../src/hw/driver/adc.c:145:6:HAL_ADC_MspInit	48	static
+../src/hw/driver/adc.c:204:6:HAL_ADC_MspDeInit	8	static
+../src/hw/driver/adc.c:234:9:checksumPacket	8	static
+../src/hw/driver/adc.c:251:13:cliADC	24	static

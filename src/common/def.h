@@ -20,6 +20,8 @@
 #define _DEF_LED3    2
 #define _DEF_LED4    3
 
+#define _DEF_ADC1	 0
+
 #define _DEF_UART1   0  // USB_CDC communication
 #define _DEF_UART2   1  // UART
 #define _DEF_UART3   2

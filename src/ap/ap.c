@@ -11,15 +11,15 @@
 
 void apInit(void)
 {
-//  uartOpen(_DEF_UART1, 57600); // USB_CDC
-  uartOpen(_DEF_UART2, 57600);  // UART
+  uartOpen(_DEF_UART1, 57600); // USB_CDC
+//  uartOpen(_DEF_UART2, 57600);  // UART
 
   cliOpen(_DEF_UART1, 57600);
 //  cliOpenLog(_DEF_UART2, 57600);
 
 
   //  spiBegin(_DEF_SPI1);
-  spiBegin(_DEF_SPI2);
+  //  spiBegin(_DEF_SPI2);
 }
 
 

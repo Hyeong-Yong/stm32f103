@@ -24,8 +24,8 @@
 
 #define CLI_PROMPT_STR            "cli# "
 
-#define CLI_ARGS_MAX              32
-#define CLI_PRINT_BUF_MAX         256
+#define CLI_ARGS_MAX              16
+#define CLI_PRINT_BUF_MAX         128
 
 
 enum

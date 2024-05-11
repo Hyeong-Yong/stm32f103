@@ -1,6 +1,5 @@
 src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/spi/mcp48x2.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/def.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/bsp/bsp.h \
@@ -23,6 +22,8 @@ src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
+ C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
@@ -35,21 +36,18 @@ src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/led.h \
+ C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/uart.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/usb.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/reset.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/rtc.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/cdc.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/flash.h \
  C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/cli.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/motor.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/spi.h \
- C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/gpio.h
+ C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/gpio.h \
+ C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/adc.h
 ../src/ap/ap.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw.h:
-C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/spi/mcp48x2.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/def.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/bsp/bsp.h:
@@ -72,6 +70,8 @@ C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
+C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h:
+C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
@@ -84,15 +84,13 @@ C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
-C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/led.h:
+C:/Dev/STM32/STM32F1xx/stm32f103/src/hw/hw_def.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/uart.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/usb.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/reset.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/rtc.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/cdc.h:
-C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/flash.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/cli.h:
-C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/motor.h:
-C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/spi.h:
 C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/gpio.h:
+C:/Dev/STM32/STM32F1xx/stm32f103/src/common/hw/include/adc.h:

@@ -14,7 +14,7 @@
 static bool is_open[UART_MAX_CH];
 
 static qbuffer_t qbuffer[UART_MAX_CH];
-static uint8_t rx_buf[256];
+static uint8_t rx_buf[128];
 
 
 UART_HandleTypeDef huart1;
